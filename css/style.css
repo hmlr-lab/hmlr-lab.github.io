@@ -161,6 +161,17 @@
     border-left: 15px solid #FFFFFF;
 }
 
+.page-header1 .container {
+    position: relative;
+    padding: 45px 0 45px 35px;
+    border-left: 15px solid #FFFFFF;
+}
+.page-header2 .container {
+    position: relative;
+    padding: 45px 0 45px 35px;
+    border-left: 15px solid #FFFFFF;
+}
+
 .header-carousel .container::before,
 .header-carousel .container::after,
 .page-header .container::before,
@@ -174,12 +185,42 @@
     background: #FFFFFF;
 }
 
+.page-header1 .container::before,
+.page-header1 .container::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 15px;
+    background: #FFFFFF;
+}
+
+.page-header2 .container::before,
+.page-header2 .container::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 15px;
+    background: #FFFFFF;
+}
+
+
 .header-carousel .container::after,
 .page-header .container::after {
     top: 100%;
     margin-top: -15px;
 }
-
+.page-header1 .container::after {
+    top: 100%;
+    margin-top: -15px;
+}
+.page-header2 .container::after {
+    top: 100%;
+    margin-top: -15px;
+}
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
@@ -244,6 +285,13 @@
 
 .page-header1 {
     background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+.page-header2 {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/neon.jpg) center center no-repeat;
     background-size: cover;
 }
 
