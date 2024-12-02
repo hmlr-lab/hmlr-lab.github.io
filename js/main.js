@@ -67,13 +67,11 @@
         return false;
     });
 
-
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
-
 
     // Date and time picker
     $('.date').datetimepicker({
@@ -107,9 +105,9 @@
         autoplay: true,
         smartSpeed: 1500,
         items: 1,
-        dots: false,
+        dots: true,
         loop: true,
-        nav : true,
+        nav : false,
         navText : [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
@@ -171,5 +169,16 @@
         }
     });
     
+$('.dot').click(function(){
+    let attributeValue = $(this).attr('data-index'); // Get the 'data-value' attribute of the clicked element
+    // Select your carousel
+var owl = $('.owl-carousel');
+
+// Access the plugin and call `to`
+var navigation = owl.data('owl.carousel')._plugins.navigation; // Access the Navigation plugin
+navigation.to(attributeValue); // Go to the next slide
+   
+})
+
 })(jQuery);
 
