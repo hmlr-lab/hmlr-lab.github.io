@@ -621,8 +621,8 @@
   .dots {
     position: relative;
     bottom: 10px;
-   
-    transform: translateX(48%) translateY(-100%);
+    padding-left: 48%;
+    transform:translateY(-100%);
     display: flex;
     gap: 5px;
     z-index: 10;
